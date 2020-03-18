@@ -102,6 +102,14 @@ mywebsiteexample.com/test||test=test;myotherwebsite.com
 
 Feel free to check the rules files for more information and examples.
 
+## Extra
+The **tool** currently supports Titanium Web Proxy, only. Though, if you want to use FiddlerCore with the project, do the following:
+1. Acquire a trial (or commercial license) for FiddlerCore from telerik.com.
+2. Import FiddlerCore dependencies into the project.
+3. Uncomment FiddlerProxy.cs and FiddlerCertManager.cs within the project.
+4. Reference FiddlerProxy instead of TitaniumProxy inside WebHelperForm.cs.
+5. Compile and enjoy.
+
 ## Copyright
 License: CC BY-NC-SA 4.0 (Attribution-NonCommercial-ShareAlike 4.0 International)
 
@@ -111,4 +119,4 @@ Read file [LICENSE](LICENSE)
 
 [Blog](http://sres.tumblr.com)
 
-[Discussion]()
+[Discussion](https://sres.tumblr.com/post/612920999394099200/introducing-the-security-tool-webhelper)
