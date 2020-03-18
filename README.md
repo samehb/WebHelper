@@ -66,9 +66,9 @@ For example, the following rule (on **forwards.txt**) will forward mywebsiteexam
 mywebsiteexample.com;myotherwebsite.com
 ```
 
-You can also create your own methods, for handling urls on rules files, into **WebHelperMethods.cs** (on the project).
+You can also create your own methods, for handling urls on rules files, into [WebHelperMethods.cs](https://github.com/samehb/WebHelper/blob/master/src/WebHelper/Util/WebHelperMethods.cs) (on the project).
 The following example contains a method action. When the program matches www.mywebsiteexample.com, it will call the method 
-associated with mytest, on WebHelperMethods.cs, to handle it.
+associated with mytest, on [WebHelperMethods.cs](https://github.com/samehb/WebHelper/blob/master/src/WebHelper/Util/WebHelperMethods.cs), to handle it.
 
 ```
 www.mywebsiteexample.com;method=mytest
@@ -100,14 +100,14 @@ The following rule matches mywebsiteexample.com/test with the POST parameters te
 mywebsiteexample.com/test||test=test;myotherwebsite.com
 ```
 
-Feel free to check the rules files for more information and examples.
+Feel free to check the rules files for more information and examples. Also, if you are using browsers, make sure you clear the cache after rules modifications.
 
 ## Extra
 The **tool** currently supports Titanium Web Proxy, only. Though, if you want to use FiddlerCore with the project, do the following:
 1. Acquire a trial (or commercial license) for FiddlerCore from telerik.com.
 2. Import FiddlerCore dependencies into the project.
-3. Uncomment FiddlerProxy.cs and FiddlerCertManager.cs within the project.
-4. Reference FiddlerProxy instead of TitaniumProxy inside WebHelperForm.cs.
+3. Uncomment [FiddlerProxy.cs](https://github.com/samehb/WebHelper/blob/master/src/WebHelper/Network/Fiddler/FiddlerProxy.cs) and [FiddlerCertManager.cs](https://github.com/samehb/WebHelper/blob/master/src/WebHelper/Network/Fiddler/FiddlerCertManager.cs) within the project.
+4. Reference FiddlerProxy instead of TitaniumProxy inside [WebHelperForm.cs](https://github.com/samehb/WebHelper/blob/master/src/WebHelper/WebHelperForm.cs).
 5. Compile and enjoy.
 
 ## Copyright
